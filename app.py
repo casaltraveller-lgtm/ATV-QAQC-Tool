@@ -50,7 +50,7 @@ if uploaded_file:
     st.image(image, caption="Uploaded core photo", use_container_width=True)
 
     if st.button("Run Visual Assessment"):
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-2.0-flash")
 
         try:
             response = model.generate_content(
